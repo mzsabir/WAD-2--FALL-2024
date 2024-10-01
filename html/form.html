@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <a href="basics-tags.html">Basic Tags</a>
+    <form>
+        <table border="1" cellspacing="5">
+            <tr>
+                <td><label>Name:</label></td>
+                <td><input type="text" placeholder="please enter your name"></td>
+            </tr>
+            <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" required></td>
+            </tr>
+            <tr>
+                <td><label>City:</label></td>
+                <td>
+                    <select>
+                        <option>Islambad</option>
+                        <option selected="selected">Rawapindi</option>
+                        <option>Lahore</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Transport:</td>
+                <td>
+                    <input type="checkbox" name="van"> Van
+                    <input type="checkbox" name="bus"> Bus
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <input type="number" name="age" value="18" min="10" max="30">
+                </td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td>
+                    <textarea rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td>
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button>Reset</button>
+                    <input type="submit" value="Save">
+                </td>
+            </tr>
+        </table>
+       
+    
+    </form>
+</body>
+</html>
