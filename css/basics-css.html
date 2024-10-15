@@ -6,22 +6,39 @@
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
     <style>
-       p,h1,table {color:purple; text-align: center;}
+       *{margin: 0; padding: 0;}
+       p,h1,table {color:purple;}
        #abc{color:orange}
        .xyz{color: blue}
        .second {color:grey}
+       #head{
+        padding: 28px;
+        margin: 20px 18px 5px 15px;
+        border: 10px solid red;
+       }
     </style>
 </head>
 <body>
-    1. inline CSS
-    2. Internal/On Page CSS
-    3. Exteral CSS
-    <h1 style="background: #336699; color:white">Heading 1</h1>
+    <h1 id="head">Three Type of Sytling</h1>
+    <ol>
+        <li>Inline CSS</li>
+        <li>Interal CSS</li>
+        <li>External CSS</li>
+    </ol>
+    
     <p>Paragaph 1</p>
     <p>Paragaph 1</p>
     <p class="xyz" id="abc">Paragaph 1</p>
     <p style="color:aqua" class="xyz second" id="abc" >Paragaph 1</p>
     <p>Paragaph 1</p>
-    <p>Paragaph 1</p>
+    <p style="color:cadetblue; margin-top: 50px;">Paragaph 1</p>
+    <h1>CSS Combinations</h1>
+    <ol>
+        <li>Decendent Selector (space) e.g div p</li>
+        <li>Child Selector (>) e.g div > p</li>
+        <li>Adjucent Sibling Selector (+) e.g div + p</li>
+        <li>General Sibling Selector (~) e.g div ~ p</li>
+    </ol>
+    <h1>Seudo Class</h1>
 </body>
 </html>
