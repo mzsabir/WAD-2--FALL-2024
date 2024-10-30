@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {padding:0; margin:0}
+        @media (max-width: 600px) 
+        {
+        
+            #container{
+                width:1000px; height:600px; background:yellow; margin:0 auto; display:flex; gap:20px; justify-content: center; flex-direction: column;
+            }
+        }
+        @media(min-width:600px)
+        {
+            #container{
+                width:1000px; height:600px; background:red; margin:0 auto; display:flex; gap:20px; justify-content:space-evenly; flex-direction: row;  flex-wrap: wrap;
+            }
+        }
+        @media(min-width:900px)
+        {
+            #container{
+                width:1000px; height:600px; background:red; margin:0 auto; display:flex; gap:20px; justify-content:space-evenly; flex-direction: row-reverse;  flex-wrap: wrap;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div style="width:200px; height:200px; background:blue">
+            A Box Content
+        </div>
+        <div style="width:200px; height:200px; background:paleturquoise;">
+            B Box Content
+        </div>
+        <div style="width:200px; height:200px; background:paleturquoise;">
+            B Box Content
+        </div>
+        <div style="width:200px; height:200px; background:paleturquoise;">
+            B Box Content
+        </div>
+        
+    </div>
+</body>
+</html>
