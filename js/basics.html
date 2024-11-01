@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+              document.getElementById("output").innerHTML+="";
+            // for(i=1;i<=10;i++)
+            // {
+            //     document.getElementById("output").innerHTML+="<p>This is paragarph "+i+"</p>"
+            // }
+            let val=document.getElementById("num").value;
+            if(val=="anas")
+            {
+                window.location.href = "http://www.w3schools.com";
+            }
+            
+        }
+        function update(){
+            let val=document.getElementById("num").value;
+            document.getElementById("output").innerHTML=val;
+        }
+        function menter()
+        {
+            document.getElementById("para").innerHTML="Mouse Entered"
+        }
+        function mleave()
+        {
+            document.getElementById("para").innerHTML="Mouse Leave"
+        }
+    </script>
+</head>
+<body>
+    <p id="para">Hello to JS</p>
+    <input type="password" id="num" onkeyup="update()" onmouseenter="menter()" onmouseleave="mleave()">
+    <button onclick="fun()">Click</button>
+    <div id="output">
+
+    </div>
+    
+</body>
+</html>
