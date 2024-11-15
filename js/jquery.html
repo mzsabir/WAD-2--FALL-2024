@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var x=$(this).html();
+                $("input").val(x);
+            });
+            $("#four").click(function(){
+                d=$("input").val();
+                $("ul").append("<li>"+d+"</li>");
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <ul style="background: lightgreen;">
+       <li>Monday</li>
+       <li>Tuesday</li>
+       <li>Wednesday</li> 
+    </ul>
+
+    <input type="text">
+    <button> 1 </button>
+    <button> 2 </button>
+    <button> 3 </button>
+    <button id="four"> 4 </button>
+    
+</body>
+</html>

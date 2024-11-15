@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script type="text/javascript">
+        function validate_input()
+        {
+            var ph=document.getElementById("phone").value;
+            pattern=/^([0-9]{7})$/;
+
+            if(pattern.test(ph))
+                document.getElementById("msg").innerHTML="Valid";
+            else
+                document.getElementById("msg").innerHTML="Invalid";
+            return 0;
+           
+        }
+    </script>
+</head>
+<body>
+    <h3>Form Validation</h3>
+    <p>PHone should have 7 digits</p>
+    <form>
+        Phone: <input type="text" id="phone">
+        <input type="button" value="Check" onclick="validate_input()">
+    </form>
+    <p style="color:red" id="msg">
+
+    </p>
+</body>
+</html>
