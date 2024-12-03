@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        * {font-size: 40px;  font-family: Arial;}
+        h1,h3{color: green; font-style: bold;}
+        p.note{font-size: 30px;
+               font-style: normal; 
+               border-style: dotted;
+        }
+        ul>li{
+            font-family: 'Courier New';
+            font-size: 20px;
+            color: blue;
+            font-style: italic;
+        }
+        div h3{
+            font-family: "calibri";
+            color: red;
+            font-style: italic;
+        }
+        #uni{ font-size: 10px;}
+        div + h1{border-style: dotted; color: navy;}
+
+    </style>
+</head>
+<body>
+    <div> Paragraph 1 </div>
+
+    <div>           
+         <h3> Paragraph 2 </h3>
+         <h2> Paragraph 3 </h2>
+    </div>
+    
+    <h3> Paragraph 4 </h3>
+    
+    <div>
+       <ul>
+         <li> Paragraph A </li>
+         <li id="uni" style="font-size: 14px;"> Paragraph B </li>
+       </ul>
+       
+       <h2> Paragraph 6 </h2>
+    </div>
+    
+    <h1> Paragraph 7 </h1>
+    <p class="note"> Paragraph 8 </p> 
+</body>
+</html>
