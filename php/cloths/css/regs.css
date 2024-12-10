@@ -1,0 +1,74 @@
+/* reg.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('D:\IMG-20241005-WA0003.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* height of view*/
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.reg-form {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Round corners */
+}
+
+    .reg-form h2 {
+        margin-bottom: 20px;
+    }
+
+    .reg-form label {
+        display: block;
+        margin-bottom: 10px;
+		text-align: left;
+    }
+    .reg-form input[type="username"],
+    .reg-form input[type="email"],
+    .reg-form input[type="password"]
+	
+	{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .reg-form button[type="submit"] {
+        background-color: brown;
+        color:  #f8f8f8;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        .reg-form button[type="submit"]:hover {
+            background-color: #f8f8f8;
+			color: brown; 
+        }

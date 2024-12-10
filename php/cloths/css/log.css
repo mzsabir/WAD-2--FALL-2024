@@ -1,0 +1,71 @@
+﻿/* login.css */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url('D:\IMG-20241005-WA0003.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Round corners */
+}
+
+    .login-form h2 {
+        margin-bottom: 20px;
+    }
+
+    .login-form label {
+        display: block;
+        margin-bottom: 10px;
+		text-align: left;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .login-form button[type="submit"] {
+        background-color: brown;
+        color:  #f8f8f8;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+        .login-form button[type="submit"]:hover {
+            background-color: #f8f8f8;
+			color: brown; 
+        }

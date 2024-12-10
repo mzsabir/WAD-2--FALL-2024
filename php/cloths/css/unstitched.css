@@ -1,0 +1,97 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px; 
+    margin-left: 20px; 
+}
+
+.header-icons .search-bar {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-icon, .cart-icon {
+    width: 24px;
+    cursor: pointer;
+}
+
+#cart-count {
+    font-weight: bold;
+    color: brown;
+}
+
+.unstitched-products h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+	 width: 100%;
+}
+
+.product {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    transition: box-shadow 0.3s;
+}
+
+.product:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.05);
+}
+
+.product h3 {
+    font-size: 18px;
+    color: #555;
+    margin: 10px 0;
+	font-weight: bold;
+}
+
+.product p {
+    color: #888;
+    font-size: 16px;
+}
+
+.product button {
+   padding: 3px 65px; 
+  background-color: brown; 
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px; 
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #A0522D;
+}
+
+footer {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}

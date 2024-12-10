@@ -1,0 +1,158 @@
+﻿/* ok.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between; /* Space logo and nav */
+    align-items: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px; 
+    margin-left: 20px; 
+}
+
+nav {
+    margin-top: 10px;
+}
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+            position: relative;
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+            }
+
+            nav ul li .dropdown {
+                display: none; 
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #ffffff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                z-index: 1000;
+            }
+
+            nav ul li:hover .dropdown {
+                display: block; 
+            }
+
+.dropdown li {
+    display: block;
+    margin: 0;
+}
+
+    .dropdown li a {
+        padding: 10px 15px;
+        display: block;
+    }
+
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+
+    .banner img {
+        width: 100%; 
+        height: auto; 
+    }
+
+.shop-now {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #f8f8f8;
+    padding: 12px 25px; 
+
+    border: 2px solid #f8f8f8;
+    border-radius: 25px; 
+    font-size: 16px;
+    font-weight: bold; 
+    background: transparent;
+    
+}
+
+    
+    .shop-now:hover {
+        background: #f8f8f8;
+        
+        color: brown; 
+    }
+
+   
+.categories {
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.category {
+    position: relative; 
+    display: inline-block;
+    margin: 20px;
+    overflow: hidden; 
+    width: 200px; 
+}
+
+    .category a {
+        text-decoration: none; /* no line under links */
+        color: white; /* link color */
+    }
+
+    .category img {
+        width: 100%; 
+        height: auto; 
+        transition: transform 0.3s; /*  for zoom  */
+    }
+
+    .category:hover img {
+        transform: scale(1.1); /* Zoom  */
+    }
+
+    .category h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center text */
+        font-size: 24px; 
+        font-weight: bold; 
+       
+       
+    }
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
