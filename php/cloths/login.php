@@ -1,14 +1,31 @@
-﻿<!DOCTYPE html>
+﻿<?php
+session_start();
+include("includes/connection.php");
+if(isset($_POST['email']))
+{
+    $email=$_POST['email'];
+    $password=$_POST['password'];
+    $result=mysqli_query($conn,"select * from users where email='$email' and password='$password'");
+    if(mysqli_num_rows($result)==1)
+    {
+        $user=mysqli_fetch_array($result);
+        $_SESSION['name']=$user['name'];
+        $_SESSION['role']=$user['role'];
+        header("location:index.php");
+    }
+}
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="log.css">
+    <link rel="stylesheet" href="css/log.css">
     <title>Novelle Clothing - Login</title>
 </head>
 <body>
     <section class="login-form">
-        <form id="loginForm" onsubmit="return validateForm()">
+        <form id="loginForm" action="login.php" method="POST" onsubmit="return validateForm()">
             <h2>Login</h2>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
@@ -17,8 +34,7 @@
             <input type="password" id="password" name="password" required>
             <br>
             <button type="submit">Login</button>
-        </form>
-        
+        </form>        
     </section>
 
     <script>

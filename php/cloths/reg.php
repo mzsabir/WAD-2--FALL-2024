@@ -1,3 +1,24 @@
+<?php
+$error="";
+include("includes/connection.php");
+if(isset($_POST['name']))
+{
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $pass=$_POST['password'];
+    $pass2=$_POST['confirm-password'];
+    if($pass!=$pass2)
+        $error="Password Do not match";
+    else{
+        $result=mysqli_query($conn,"INSERT INTO `users`(`name`, `email`, `password`) VALUES ('$name','$email','$pass')");
+        if($result)
+            header("location:login.php");
+        else
+            $error="Unable to register User";
+    }
+
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <!DOCTYPE html>
@@ -5,18 +26,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="regs.css">
+    <link rel="stylesheet" href="css/regs.css">
     <title>Novelle Clothing - Registration</title>
 </head>
 <body>
 
     <section class="reg-form">
-        <form id="registrationForm" onsubmit="return validateForm()">
+        <form id="registrationForm" action="reg.php" method="POST">
             <h2>Registration</h2>
-
-          
-            <label for="username">Username:</label>
-            <input type="username" id="username" name="username" required>
+            <?php
+            if(isset($error) && $error!="")
+                echo '<p style="color:red;">'.$error.'</p>';
+            ?>
+            <label for="username">Name:</label>
+            <input type="username" id="username" name="name" required>
             <br>
      
             
