@@ -1,0 +1,13 @@
+Topics Covered
+> PHP Variables
+> Mysql Connection
+> How to Execute query and get result_set
+> fetch data from result_set
+> check number of rows in result_set
+> Concatenate PHP variable with string using dot(.) operator
+> Form Submission in PHP and $_POST Array
+> File Upload in PHP
+> redirection
+> PHP build-in Arrays: $_GET, $_POST, $_SESSION, $_FILES
+> Insert, Update, Delete, View
+> Linking Table using Primary and Foreign keys

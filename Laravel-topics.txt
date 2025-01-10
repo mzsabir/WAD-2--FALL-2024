@@ -1,0 +1,10 @@
+- Laravel as framework
+- Laravel installation
+- MVC Architecture
+- Database and Migrations
+- Laravel basic commands
+- Routing, Dynamic Routing
+- Models, fillable array
+- Controllers, controller actions
+- Form submission, Form validation
+- File upload
